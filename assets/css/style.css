@@ -674,3 +674,14 @@ a:hover {
   display: flex;
   justify-content: space-between;
 }
+.card-icons {
+  border-right: 1px solid #faa300;
+}
+.card-size-font {
+  font-family: bold;
+}
+@media (max-width: 320px) {
+  .card-size-font {
+    font-size: 13px;
+  }
+}
