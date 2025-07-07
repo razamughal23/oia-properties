@@ -96,5 +96,18 @@
     },
     true
   );
-  
+  document.addEventListener("click", function (e) {
+    if (e.target.closest(".card-heart")) {
+      const icon = e.target.closest(".card-heart").querySelector("i");
+      icon.classList.toggle("bi-heart");
+      icon.classList.toggle("bi-heart-fill");
+
+      // Apply color based on state
+      if (icon.classList.contains("bi-heart-fill")) {
+        icon.style.color = "#faa300"; // filled heart = red
+      } else {
+        icon.style.color = "#faa300"; // unfilled heart = your theme color
+      }
+    }
+  });
 })();
