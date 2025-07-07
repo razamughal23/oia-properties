@@ -413,6 +413,8 @@ a:hover {
 }
 .arrowbuttons {
   padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 .blur-card1 {
   display: flex;
@@ -520,7 +522,6 @@ a:hover {
   display: block;
 }
 
-/* For screens 425px and below */
 @media (max-width: 425px) {
   .mobile-only {
     display: block;
@@ -545,10 +546,17 @@ a:hover {
   overflow: hidden;
   width: fit-content;
   background: white;
-  font-family: Arial, sans-serif;
   cursor: pointer;
 }
-
+.toggle-switch-latest {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  width: fit-content;
+  background: white;
+  cursor: pointer;
+}
 .toggle-option {
   padding: 10px 25px;
   border: none;
@@ -561,6 +569,18 @@ a:hover {
 .toggle-option.active {
   background-color: #001f5c; /* dark blue */
   color: white;
+}
+.toggle-option-latest {
+  padding: 10px 25px;
+  border: none;
+  background: transparent;
+  color: #001f5c;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.toggle-option-latest.active {
+  background-color: #f9a300; /* dark blue */
+  color: black;
 }
 
 .toggle-option:not(.active):hover {
@@ -608,4 +628,49 @@ a:hover {
   .search-box {
     padding: 20px;
   }
+}
+.property-card {
+  border: 0.5px solid black;
+  border-radius: 8px;
+}
+.card-img {
+  background-image: url(../img/banner-img.jpg);
+  height: 270px;
+  width: 100%;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-Box {
+  background: #f9a300;
+  padding: 8px 25px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+.card-heart {
+  background: black;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 100%;
+  color: #f9a300;
+}
+.card-property-type {
+  background: rgb(101 98 98 / 70%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 0px;
+}
+.card-arrowbuttons {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
