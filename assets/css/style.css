@@ -703,3 +703,24 @@ a:hover {
   padding: 5px 20px;
   border-radius: 8px;
 }
+.section-title {
+  background-color: #f9a300;
+  height: 50px;
+  width: 8px;
+  margin-right: 15px;
+}
+.off-plans-titles {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #001f5c;
+  text-align: center;
+}
+.offplan-grids {
+  background: white;
+  border-radius: 8px;
+}
+.off-plan-tags {
+  color: #2d2d2d;
+  font-family: bold;
+  padding-bottom: 8px;
+}

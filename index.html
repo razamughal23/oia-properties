@@ -233,14 +233,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-12 col-lg-12 col-xl-12 d-flex">
-              <div
-                style="
-                  background-color: #f9a300;
-                  height: 50px;
-                  width: 8px;
-                  margin-right: 15px;
-                "
-              ></div>
+              <div class="section-title"></div>
               <h1 style="font-weight: bold; text-transform: uppercase">
                 Latest Properties
               </h1>
@@ -283,6 +276,119 @@
         </div>
       </section>
       <!-- Latest Properties Section -->
+
+      <div class="container pb-4">
+        <div class="col-12 col-md-12 col-lg-12 col-xl-12 d-flex">
+          <div class="section-title"></div>
+          <h1 style="font-weight: bold; text-transform: uppercase">
+            Off-Plan Projects
+          </h1>
+        </div>
+      </div>
+
+      <!-- Off Plan Projects Section -->
+      <section style="background-color: #f2f2f5; padding: 50px 0px">
+        <!-- <div class="container">
+          <div class="col-12 col-md-12 col-lg-12 text-center">
+            <h3
+              style="
+                text-transform: uppercase;
+                font-family: bold;
+                letter-spacing: 2px;
+              "
+            >
+              Saadiyat Lagoons
+            </h3>
+          </div>
+          <div class="row d-flex pt-4 pb-4">
+            <div class="col-12 col-md-4 col-lg-4">
+              <h3 class="off-plans-titles">4BHK Villa+ Maid's</h3>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <h3 class="off-plans-titles">5BHK Villa+ Maid's</h3>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <h3 class="off-plans-titles">6BHK Villa+ Maid's</h3>
+            </div>
+          </div>
+          <div class="row offplan-grids d-flex align-items-center">
+            <div class="col-12 col-md-12 col-lg-6 p-4">
+              <h6 class="pb-5" style="color: rgb(93 93 93); line-height: 26px">
+                Explore The Adventure Park, Stroll Across The Stunning
+                Eco-corniche, Soak In Unparalleled Cultural Experiences—in A
+                Choice Of 4 To 6-bed Villas Surrounded By Over 900,000m2 Of
+                Protected Wilderness.
+              </h6>
+              <h6 class="off-plan-tags">
+                Starting Prices:
+                <span style="color: #faa300; font-family: bold"
+                  >AED 62,00,000</span
+                >
+              </h6>
+              <h6 class="off-plan-tags">
+                Number of Bedrooms:
+                <span style="color: #faa300; font-family: bold">4, 5, 6</span>
+              </h6>
+              <h6 class="off-plan-tags">
+                Area Size Form:
+                <span style="color: #faa300; font-family: bold"
+                  >4,690 SQ. FT</span
+                >
+              </h6>
+              <div class="col-12 col-lg-5">
+                <button
+                  style="
+                    background-color: #faa300;
+                    border: none;
+                    border-radius: 20px;
+                    color: white;
+                    padding: 10px 20px;
+                    margin-top: 20px;
+                    width: 100%;
+                  "
+                >
+                  Book Your Property
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 p-0">
+              <img
+                src="/assets//img//lagoons.png"
+                alt="lagoons-properties"
+                style="
+                  height: 100%;
+                  width: 100%;
+                  object-fit: contain;
+                  border-bottom-right-radius: 8px;
+                  border-top-right-radius: 8px;
+                "
+              />
+            </div>
+          </div>
+        </div> -->
+        <div class="container m3-3">
+          <div class="position-relative">
+            <div id="sliderContainer" class="d-flex flex-nowrap overflow-auto">
+              <!-- Each full block will go here -->
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button
+              id="sliderLeft"
+              class="btn btn-dark position-absolute top-0 start-0 z-3"
+            >
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button
+              id="sliderRight"
+              class="btn btn-dark position-absolute top-0 end-0 z-3"
+            >
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Off Plan Projects Section -->
     </main>
 
     <a
@@ -319,9 +425,7 @@
       }
     </script>
     <script>
-      // Sample array of 10 items
       const cardData = new Array(10).fill({});
-
       const cardHTML = `
       <div class="col-12 col-md-6 col-lg-5 col-xl-4 pt-5 pb-5 me-3" style="min-width: 300px; max-width: 350px;">
         <div class="container p-0 property-card">
@@ -427,6 +531,71 @@
 
       document.getElementById("scrollRight").addEventListener("click", () => {
         container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
+    </script>
+    <script>
+      const sliderData = new Array(5).fill({}); // 5 copies
+      const sliderHTML = `
+        <div class="container me-3" style="min-width: 100%; max-width: 100%;">
+          <div class="col-12 col-md-12 col-lg-12 text-center">
+            <h3 style="text-transform: uppercase; font-family: bold; letter-spacing: 2px;">
+              Saadiyat Lagoons
+            </h3>
+          </div>
+          <div class="row d-flex pt-4 pb-4">
+            <div class="col-12 col-md-4 col-lg-4">
+              <h3 class="off-plans-titles">4BHK Villa+ Maid's</h3>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <h3 class="off-plans-titles">5BHK Villa+ Maid's</h3>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <h3 class="off-plans-titles">6BHK Villa+ Maid's</h3>
+            </div>
+          </div>
+          <div class="row offplan-grids d-flex align-items-center">
+            <div class="col-12 col-md-12 col-lg-6 p-4">
+              <h6 class="pb-5" style="color: rgb(93 93 93); line-height: 26px">
+                Explore The Adventure Park, Stroll Across The Stunning
+                Eco-corniche, Soak In Unparalleled Cultural Experiences—in A
+                Choice Of 4 To 6-bed Villas Surrounded By Over 900,000m2 Of
+                Protected Wilderness.
+              </h6>
+              <h6 class="off-plan-tags">
+                Starting Prices:
+                <span style="color: #faa300; font-family: bold">AED 62,00,000</span>
+              </h6>
+              <h6 class="off-plan-tags">
+                Number of Bedrooms:
+                <span style="color: #faa300; font-family: bold">4, 5, 6</span>
+              </h6>
+              <h6 class="off-plan-tags">
+                Area Size Form:
+                <span style="color: #faa300; font-family: bold">4,690 SQ. FT</span>
+              </h6>
+              <div class="col-12 col-lg-6">
+                <button style="background-color: #faa300; border: none; border-radius: 20px; color: white; padding: 10px 20px; margin-top: 20px; width: 100%;">
+                  Book Your Property
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 p-0">
+              <img src="/assets//img//lagoons.png" alt="lagoons-properties" style="height: 100%; width: 100%; object-fit: contain; border-radius: 8px; " />
+            </div>
+          </div>
+        </div>
+      `;
+      const sliderContainer = document.getElementById("sliderContainer");
+      sliderData.forEach(() => {
+        sliderContainer.insertAdjacentHTML("beforeend", sliderHTML);
+      });
+      // Scroll Navigation
+      const scrollAmounts = sliderContainer.offsetWidth;
+      document.getElementById("sliderLeft").addEventListener("click", () => {
+        sliderContainer.scrollBy({ left: -scrollAmounts, behavior: "smooth" });
+      });
+      document.getElementById("sliderRight").addEventListener("click", () => {
+        sliderContainer.scrollBy({ left: scrollAmounts, behavior: "smooth" });
       });
     </script>
   </body>
