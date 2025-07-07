@@ -694,7 +694,12 @@ a:hover {
   .card-size-font {
     font-size: 13px;
   }
+  .lagoon-title,
+  .off-plans-titles {
+    font-size: 17px;
+  }
 }
+
 .social-box {
   border: 1.5px solid #faa300;
   display: flex;
